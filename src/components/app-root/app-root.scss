@@ -1,0 +1,28 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100000;
+}
+
+side-menu {
+  transition: all 500ms ease-in-out;
+  position: fixed;
+  display: none;
+  pointer-events: none;
+  right: 0;
+  min-width: 30%;
+  padding: 2rem;
+  min-height: calc(100vh - 4rem);
+  background-color: white;
+  box-shadow: -5px 0 5px 1px rgba(0, 0, 0, 0.288);
+
+
+  @include respond(tab-land) {
+    display: inherit;
+    pointer-events: all;
+  }
+}
+
+.slide-right {
+  transform: translateX(103%);
+}

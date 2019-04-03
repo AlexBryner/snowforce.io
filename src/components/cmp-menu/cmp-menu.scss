@@ -1,0 +1,46 @@
+.cmp-menu {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.header-links {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  @include respond(tab-land) {
+    display: none;
+    pointer-events: none;
+  }
+}
+
+.header-link {
+  color: white;
+  padding: 0 1rem;
+  text-decoration: underline;
+  text-decoration-color: $brand-color;
+
+  @include on-event() {
+    text-decoration-color: white;
+  }
+}
+
+.menu-icon {
+  display: none;
+  pointer-events: none;
+  height: 100%;
+  margin-right: 2rem;
+
+  @include respond(tab-land) {
+    display: inherit;
+    pointer-events: inherit;
+  }
+
+  @include respond(phone) {
+    margin-right: 1.5rem;
+  }
+}

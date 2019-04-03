@@ -1,0 +1,64 @@
+.app-about {
+}
+
+.container {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: white;
+}
+
+.description {
+  padding: 0 2rem 4rem 2rem;
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
+  @include respond(phone) {
+    padding: 1rem;
+  }
+}
+
+.flex {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.event-details {
+  padding-bottom: 2rem;
+}
+
+.wrapper {
+  margin-top: 2rem;
+  padding: 2rem;
+
+  @include respond(phone) {
+    padding: 1rem;
+  }
+}
+
+.snowforce-pics {
+  width: 50%;
+
+  & img {
+    box-shadow: none!important;
+  }
+
+  @include respond(tab-port) {
+    width: 100%;
+  }
+
+}

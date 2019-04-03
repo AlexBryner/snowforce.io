@@ -1,0 +1,33 @@
+{
+  "name": "snowforce",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Snowforce Community Website",
+  "scripts": {
+    "start-dev-server": "stencil build --dev --watch --serve",
+    "production-build": "stencil build",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "build-docs": "stencil build --docs",
+    "compile-theme-scss": "node-sass theme-scss/main.scss src/global/app.css",
+    "watch-theme-scss": "node-sass theme-scss/main.scss src/global/app.css -w",
+    "firebase-local-serve": "firebase serve",
+    "prefirebase-deploy": "stencil build",
+    "firebase-deploy": "firebase deploy"
+  },
+  "dependencies": {
+    "@stencil/core": "0.18.0",
+    "@stencil/router": "0.3.3",
+    "firebase": "^5.9.2"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@stencil/sass": "^0.1.1",
+    "@types/jest": "23.3.14",
+    "@types/puppeteer": "1.12.3",
+    "jest": "23.6.0",
+    "jest-cli": "23.6.0",
+    "puppeteer": "1.11.0",
+    "workbox-build": "3.4.1"
+  }
+}

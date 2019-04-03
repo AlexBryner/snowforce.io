@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 1 + Oval 2 + Logo with lines</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M34.5375,69.075 C53.6120345,69.075 69.075,53.6120345 69.075,34.5375 C69.075,15.4629655 53.6120345,0 34.5375,0 C15.4629655,0 0,15.4629655 0,34.5375 C0,53.6120345 15.4629655,69.075 34.5375,69.075 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop-HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-56.000000, -49.000000)">
+        <g id="Oval-1-+-Oval-2-+-Logo-with-lines" transform="translate(56.000000, 49.000000)">
+            <circle id="Oval-2" stroke="#0C8EFF" stroke-width="6.4" cx="40" cy="40" r="36.8"></circle>
+            <circle id="Oval-1" stroke="#FFFFFF" fill="#0C8EFF" cx="40.3417511" cy="40.3417511" r="34.3417511"></circle>
+            <g id="Logo-with-lines" transform="translate(5.700001, 5.200001)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g id="Oval-1-Copy-4" mask="url(#mask-2)" fill="#FFFFFF">
+                    <g transform="translate(0.000000, 8.145206)">
+                        <path d="M0,26.4426538 C0,45.3119379 15.4629655,60.608515 34.5375,60.608515 C53.6120345,60.608515 69.075,45.3119379 69.075,26.4426538 M36.0582209,6.99958349 C37.9656744,6.99958349 39.5119709,5.45328693 39.5119709,3.54583345 C39.5119709,1.63837997 37.9656744,0.0920834043 36.0582209,0.0920834043 C34.1507675,0.0920834043 32.6044709,1.63837997 32.6044709,3.54583345 C32.6044709,5.45328693 34.1507675,6.99958349 36.0582209,6.99958349 Z"></path>
+                    </g>
+                </g>
+                <path d="M19.4488006,18.7554621 L41.3057791,43.5303494 L-5.07888663,43.5303494 L16.7780919,18.7554621 C17.4287278,18.0179663 18.5540309,17.9475524 19.2915267,18.5981883 C19.3471773,18.6472845 19.3997043,18.6998116 19.4488006,18.7554621 Z" id="Triangle-4" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                <path d="M53.9531244,20.3270386 L73.4623327,44.2583597 L31.6834709,44.2583597 L51.1926793,20.3270386 C51.8140992,19.5647627 52.9358062,19.4505764 53.6980821,20.0719963 C53.7915089,20.1481594 53.8769613,20.2336117 53.9531244,20.3270386 Z" id="Triangle-4" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                <path d="M37.8356244,26.5437886 L57.3448327,50.4751097 L15.5659709,50.4751097 L35.0751793,26.5437886 C35.6965992,25.7815127 36.8183062,25.6673264 37.5805821,26.2887463 C37.6740089,26.3649094 37.7594613,26.4503617 37.8356244,26.5437886 Z" id="Triangle-4" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                <g id="Group" mask="url(#mask-2)" fill="#0C8EFF">
+                    <g transform="translate(-3.453750, 34.537500)">
+                        <polyline id="Path-157" points="45.81975 20.9527497 48.8066071 12.894 51.576 20.95275"></polyline>
+                        <polyline id="Path-157" points="36.3795 9.67049974 39.257625 0 42.13575 9.6705"></polyline>
+                        <polyline id="Path-157" points="27.39975 20.9527497 30.3866071 12.894 33.156 20.95275"></polyline>
+                        <rect id="Rectangle-11" x="45.129" y="21.183" width="7.13775" height="15.42675"></rect>
+                        <rect id="Rectangle-12" x="34.998" y="9.90075" width="8.7495" height="5.0655"></rect>
+                        <rect id="Rectangle-12" x="33.84675" y="15.1965" width="11.052" height="21.6435"></rect>
+                        <rect id="Rectangle-11" x="26.47875" y="21.183" width="7.13775" height="15.42675"></rect>
+                        <rect id="Rectangle-23" x="11.74275" y="7.368" width="1.15125" height="29.472"></rect>
+                        <rect id="Rectangle-23" x="13.12425" y="2.53275" width="5.29575" height="34.077"></rect>
+                        <rect id="Rectangle-23" x="18.65025" y="8.289" width="7.59825" height="28.551"></rect>
+                        <rect id="Rectangle-29" x="0" y="27.86025" width="8.51925" height="8.7495"></rect>
+                        <rect id="Rectangle-7" x="52.497" y="7.568" width="8.7495" height="4.705"></rect>
+                        <rect id="Rectangle-7" x="52.497" y="12.40325" width="8.7495" height="4.705"></rect>
+                        <rect id="Rectangle-7" x="52.497" y="17.2385" width="8.7495" height="4.605"></rect>
+                        <rect id="Rectangle-7" x="52.497" y="21.97375" width="8.7495" height="4.605"></rect>
+                        <rect id="Rectangle-7" x="52.497" y="26.709" width="8.7495" height="4.605"></rect>
+                        <rect id="Rectangle-7" x="53.418" y="32.00475" width="8.7495" height="4.605"></rect>
+                        <rect id="Rectangle-5-Copy" x="61.47675" y="11.74275" width="5.29575" height="25.09725"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

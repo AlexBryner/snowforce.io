@@ -1,0 +1,29 @@
+.cmp-image-grid {
+  padding: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+
+  @include respond(tab-port) {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  @include respond(phone) {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.column img {
+  max-width: 100%;
+  vertical-align: middle;
+  box-shadow: 3px 5px 10px #aaaaaa;
+}
