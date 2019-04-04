@@ -138,6 +138,57 @@ export namespace Components {
 
   interface CmpMobileMenu {}
   interface CmpMobileMenuAttributes extends StencilHTMLAttributes {}
+
+  interface CmpSnow {}
+  interface CmpSnowAttributes extends StencilHTMLAttributes {}
+
+  interface CmpSponsor {
+    /**
+    * Alt Tag for Logo
+    */
+    'alt': string;
+    /**
+    * Sponsor Level
+    */
+    'level': string;
+    /**
+    * Sponsor Logo
+    */
+    'logo': string;
+    /**
+    * Sponsor Name
+    */
+    'name': string;
+    /**
+    * Sponsor Website
+    */
+    'url': string;
+  }
+  interface CmpSponsorAttributes extends StencilHTMLAttributes {
+    /**
+    * Alt Tag for Logo
+    */
+    'alt'?: string;
+    /**
+    * Sponsor Level
+    */
+    'level': string;
+    /**
+    * Sponsor Logo
+    */
+    'logo'?: string;
+    /**
+    * Sponsor Name
+    */
+    'name'?: string;
+    /**
+    * Sponsor Website
+    */
+    'url'?: string;
+  }
+
+  interface CmpThankYou {}
+  interface CmpThankYouAttributes extends StencilHTMLAttributes {}
 }
 
 declare global {
@@ -154,6 +205,9 @@ declare global {
     'CmpMenuLinks': Components.CmpMenuLinks;
     'CmpMenu': Components.CmpMenu;
     'CmpMobileMenu': Components.CmpMobileMenu;
+    'CmpSnow': Components.CmpSnow;
+    'CmpSponsor': Components.CmpSponsor;
+    'CmpThankYou': Components.CmpThankYou;
   }
 
   interface StencilIntrinsicElements {
@@ -169,6 +223,9 @@ declare global {
     'cmp-menu-links': Components.CmpMenuLinksAttributes;
     'cmp-menu': Components.CmpMenuAttributes;
     'cmp-mobile-menu': Components.CmpMobileMenuAttributes;
+    'cmp-snow': Components.CmpSnowAttributes;
+    'cmp-sponsor': Components.CmpSponsorAttributes;
+    'cmp-thank-you': Components.CmpThankYouAttributes;
   }
 
 
@@ -244,6 +301,24 @@ declare global {
     new (): HTMLCmpMobileMenuElement;
   };
 
+  interface HTMLCmpSnowElement extends Components.CmpSnow, HTMLStencilElement {}
+  var HTMLCmpSnowElement: {
+    prototype: HTMLCmpSnowElement;
+    new (): HTMLCmpSnowElement;
+  };
+
+  interface HTMLCmpSponsorElement extends Components.CmpSponsor, HTMLStencilElement {}
+  var HTMLCmpSponsorElement: {
+    prototype: HTMLCmpSponsorElement;
+    new (): HTMLCmpSponsorElement;
+  };
+
+  interface HTMLCmpThankYouElement extends Components.CmpThankYou, HTMLStencilElement {}
+  var HTMLCmpThankYouElement: {
+    prototype: HTMLCmpThankYouElement;
+    new (): HTMLCmpThankYouElement;
+  };
+
   interface HTMLElementTagNameMap {
     'app-about': HTMLAppAboutElement
     'app-home': HTMLAppHomeElement
@@ -257,6 +332,9 @@ declare global {
     'cmp-menu-links': HTMLCmpMenuLinksElement
     'cmp-menu': HTMLCmpMenuElement
     'cmp-mobile-menu': HTMLCmpMobileMenuElement
+    'cmp-snow': HTMLCmpSnowElement
+    'cmp-sponsor': HTMLCmpSponsorElement
+    'cmp-thank-you': HTMLCmpThankYouElement
   }
 
   interface ElementTagNameMap {
@@ -272,6 +350,9 @@ declare global {
     'cmp-menu-links': HTMLCmpMenuLinksElement;
     'cmp-menu': HTMLCmpMenuElement;
     'cmp-mobile-menu': HTMLCmpMobileMenuElement;
+    'cmp-snow': HTMLCmpSnowElement;
+    'cmp-sponsor': HTMLCmpSponsorElement;
+    'cmp-thank-you': HTMLCmpThankYouElement;
   }
 
 

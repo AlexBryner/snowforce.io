@@ -1,0 +1,38 @@
+
+a {
+    color: darkblue;
+}
+.platinum {
+    font-size: 28px;
+    min-width: 100vw;
+
+    & > img {
+        min-width: 400px;
+    }
+}
+
+.gold {
+    font-size: 24px;
+    min-width: 30vw;
+
+    @include respond(tab-land) {
+        min-width: 50vw;
+    }
+
+    & > img {
+        min-width: 18px;
+    }
+}
+
+.silver {
+    font-size: 20px;
+    min-width: 15vw;
+
+    @include respond(tab-land) {
+        min-width: 30vw;
+    }
+
+    & > img {
+        min-width: 16px;
+    }
+}
