@@ -42,8 +42,8 @@
   /*
       0 - 523px :     Phone
       524 - 959px :   Tablet Portrait
-      960 - 1024px :  Tablet Landscape
-      [1025 - 1440px] Normal Styles Apply
+      960 - 1200px :  Tablet Landscape
+      [1201 - 1440px] Normal Styles Apply
       1440px + :      Big Desktop
 
   Breakpoint Argument Choices
@@ -66,7 +66,7 @@
     }
 
     @if $breakpoint==tab-land {
-      @media only screen and (max-width: calculateEm(1024px)) {
+      @media only screen and (max-width: calculateEm(1200px)) {
         @content
       }
     }
