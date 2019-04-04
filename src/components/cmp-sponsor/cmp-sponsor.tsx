@@ -34,7 +34,7 @@ export class CmpSponsor {
     return (
       <div class={this.level}>
           <a href={this.url}>
-            {this.getLogo}{this.name}
+            {this.getLogo()}{this.name}
           </a>
       </div>
     );
