@@ -10,10 +10,9 @@ export class AppHome {
   render() {
     return (
       <div class='app-home'>
+        <cmp-snow />
         <cmp-image src="snowforce-19-2x.png" smallSrc="snowforce-19-2x.png" mediumSrc="snowforce-19-3x.png" largeSrc="snowforce-19-3x.png" alt="Snowforce 2019" />
-        <app-about />
-        <app-speakers />
-        <app-sponsors />
+        <cmp-thank-you />
         <cmp-image-grid />
       </div>
     );
