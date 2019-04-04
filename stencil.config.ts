@@ -11,7 +11,7 @@ export const config: Config = {
       type: 'www',
       serviceWorker: {
         globPatterns: [
-          '**/*.{js,css,json,html,ico,png,jpg}'
+          '**/*.{js,css,json,html,ico,png,jpg,svg}'
         ]
       }
     },
