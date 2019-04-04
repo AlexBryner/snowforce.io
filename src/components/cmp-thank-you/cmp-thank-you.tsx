@@ -10,9 +10,9 @@ export class CmpFireworks {
   render() {
     return (
       <div class="cmp-thank-you">
-        <h1>Thank you to our Sponsors for a Great Snowforce2019!!</h1>
+        <h1>Thank You To Our Sponsors For A Great Snowforce 2019!</h1>
         <app-sponsors />
-        <h2>Session Recordings Coming Soon on</h2>
+        <h2>Session Recordings Coming Soon On</h2>
         <div>
           <a href="https://www.pluralsight.com/">
             <img class="pluralsight" src="assets/icon/sponsors/pluralsight.png" alt="Pluralsight" />
