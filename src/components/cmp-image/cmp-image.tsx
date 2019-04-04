@@ -5,7 +5,7 @@ import { Component, Prop } from '@stencil/core';
   styleUrl: 'cmp-image.scss',
   shadow: false
 })
-export class AppImage {
+export class CmpImage {
 
   /** Name of the image to display */
   @Prop() src!: string;
@@ -35,6 +35,10 @@ export class AppImage {
     } else {
       return '';
     }
+  }
+
+  getAlt(): string {
+    return 'Snowforce - ' + this.alt;
   }
 
   getSrcSet(): string {
@@ -90,7 +94,7 @@ export class AppImage {
         <img srcset={this.getSrcSet()}
               sizes={this.getSizes()}
               src={this.getImg(this.src)}
-              alt={this.alt}/>
+              alt={this.getAlt()}/>
       </div>
     );
   }
