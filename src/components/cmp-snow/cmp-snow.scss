@@ -4,20 +4,20 @@
 
 .margin {
   &-up {
-    margin-top: -10rem;
-    margin-left: -15rem;
+    margin-top: -20rem;
+    margin-left: -20rem;
   }
 
   &-down {
-    margin-bottom: -15rem;
-    margin-right: -15rem
+    margin-bottom: -45rem;
+    margin-right: -45rem
   }
 }
 
 .snow > .before, .snow > .after {
   position: absolute;
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
 
   @include respond(tab-port) {
     width: 2px;
@@ -30,15 +30,14 @@
   animation: 1s gravity ease-in infinite backwards }
 
 .snow > .after {
-  animation-delay: 1s;
-  animation-duration: 1.25s; }
+  animation-delay: .5s;
+  animation-duration: 3.25s; }
 
 .snow > .before {
-  animation-delay: .5s;
-  animation-duration: 1.75s; }
+  animation-duration: 2.75s; }
 
 @keyframes gravity {
   to {
     margin-left: -50%;
-    transform: translateY(400px);
+    transform: translateY(500px);
     opacity: 0; } }

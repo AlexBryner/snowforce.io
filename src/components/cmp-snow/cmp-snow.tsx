@@ -11,6 +11,8 @@ export class CmpSnow {
     return (
       <div class="cmp-snow">
         <div class="snow">
+          <div class="before"></div>
+          <div class="after"></div>
           <div class="before margin-up"></div>
           <div class="after margin-up"></div>
           <div class="before margin-down"></div>
