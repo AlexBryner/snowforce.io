@@ -13,10 +13,10 @@ export class CmpSnow {
         <div class="snow">
           <div class="before"></div>
           <div class="after"></div>
-          <div class="before margin-up"></div>
-          <div class="after margin-up"></div>
-          <div class="before margin-down"></div>
-          <div class="after margin-down"></div>
+          <div class="before left"></div>
+          <div class="after left"></div>
+          <div class="before right"></div>
+          <div class="after right"></div>
         </div>
       </div>
     );
