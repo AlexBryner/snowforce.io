@@ -4,13 +4,13 @@
 
 .margin {
   &-up {
-    margin-top: -20rem;
+    margin-top: -15rem;
     margin-left: -20rem;
   }
 
   &-down {
-    margin-bottom: -45rem;
-    margin-right: -45rem
+    margin-bottom: -30rem;
+    margin-right: -35rem
   }
 }
 
@@ -27,14 +27,23 @@
   border-radius: 50%;
   box-shadow: 220px -49px white, 152px -13px white, 386px -11px white, 192px -9px white, -293px -7px white, 122px -7px white, -219px -5px white, -129px 2px white, -339px 4px white, -185px 6px white, -361px 8px white, 200px 12px white, -183px 18px white, -175px 20px white, 116px 26px white, -145px 30px white, 172px 42px white, 380px 50px white, 106px 54px white, 442px 64px white, -145px 66px white, 340px 66px white, -403px 68px white, 110px 68px white, 132px 72px white, -171px 88px white, -125px 94px white, 226px 96px white, 234px 104px white, 182px 106px white, 100px 112px white, -117px 114px white, 112px 124px white, -131px 126px white, 136px 136px white, -191px 140px white, -429px 158px white, 144px 166px white, -375px 180px white, 144px 194px white, -293px 220px white, -345px 330px white, 206px 332px white, -107px 366px white, 324px 408px white, -285px 482px white, -93px -125px white, -87px -175px white, -85px -215px white, -85px 328px white, -83px -125px white, -83px 136px white, -83px 164px white, -79px 224px white, -71px -237px white, -69px -113px white, -69px 120px white, -61px -101px white, -59px 152px white, -55px 128px white, -37px 124px white, -27px -337px white, -21px 156px white, -19px 122px white, -13px 152px white, -11px 386px white, -9px 192px white, -7px -293px white, -7px 122px white, -5px -219px white;
 
-  animation: 1s gravity ease-in infinite backwards }
+  animation: 1s gravity ease-in infinite backwards
+}
+
+.snow > div {
+  animation-delay: 1.5s;
+  animation-duration: 3.5s;
+}
 
 .snow > .after {
-  animation-delay: .5s;
-  animation-duration: 3.25s; }
+  animation-delay: 1s;
+  animation-duration: 3s;
+}
 
 .snow > .before {
-  animation-duration: 2.75s; }
+  animation-delay: .5s;
+  animation-duration: 2.5s;
+}
 
 @keyframes gravity {
   to {
