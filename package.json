@@ -18,7 +18,7 @@
   "dependencies": {
     "@stencil/core": "0.18.0",
     "@stencil/router": "0.3.3",
-    "firebase": "^5.9.2"
+    "firebase": "^5.9.3"
   },
   "license": "MIT",
   "devDependencies": {
