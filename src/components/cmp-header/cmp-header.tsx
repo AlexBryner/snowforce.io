@@ -20,9 +20,9 @@ export class CmpMenu {
                 <img class="header-img" src="assets/images/snowforce-2x.png" alt="Snowforce" />
               </a>
             </stencil-route-link>
-            {/* <div class="menu">
+            <div class="menu">
               <cmp-menu />
-            </div> */}
+            </div>
           </div>
       </div>
     );

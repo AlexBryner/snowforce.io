@@ -29,9 +29,9 @@ export class AppRoot {
           <cmp-header />
         </header>
 
-        {/* <side-menu class={this.showMenu ? '' : 'slide-right'}>
+        <side-menu class={this.showMenu ? '' : 'slide-right'}>
           <cmp-mobile-menu id="mobile-menu" />
-        </side-menu> */}
+        </side-menu>
 
         <main>
           <stencil-router>
