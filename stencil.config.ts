@@ -27,5 +27,8 @@ export const config: Config = {
         'theme-scss/abstracts/variables.scss'
       ]
     })
+  ],
+  copy: [
+    { src: 'robots.txt' }
   ]
 };
