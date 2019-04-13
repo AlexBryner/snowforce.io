@@ -1,31 +1,30 @@
-
 a {
-    color: darkblue;
+  color: darkblue;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .platinum {
-    font-size: 1.75rem;
-    max-width: 90vw;
+  font-size: 1.75rem;
+  max-width: 90vw;
 }
 
 .gold {
-    font-size: 1.5rem;
-    max-width: 23vw;
+  font-size: 1.5rem;
+  max-width: 23vw;
 
-    @include respond(tab-land) {
-        max-width: 30vw;
-    }
+  @include respond(tab-land) {
+    max-width: 30vw;
+  }
 }
 
 .silver {
-    font-size: 1.25rem;
-    max-width: 14vw;
+  font-size: 1.25rem;
+  max-width: 14vw;
 
-    @include respond(tab-land) {
-        max-width: 20vw;
-    }
+  @include respond(tab-land) {
+    max-width: 20vw;
+  }
 }

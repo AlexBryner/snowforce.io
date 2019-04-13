@@ -1,12 +1,11 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop } from "@stencil/core";
 
 @Component({
-  tag: 'cmp-address',
-  styleUrl: 'cmp-address.scss',
+  tag: "cmp-address",
+  styleUrl: "cmp-address.scss",
   shadow: true
 })
 export class AppAddress {
-
   @Prop() name: string;
   @Prop() street: string;
   @Prop() city: string;
@@ -15,13 +14,15 @@ export class AppAddress {
 
   normalize(formatStr: string): string {
     if (formatStr) {
-      let splitStr = formatStr.toLowerCase().split(' ');
+      let splitStr = formatStr.toLowerCase().split(" ");
       for (let i = 0; i < splitStr.length; i++) {
-        splitStr[i] = splitStr[i].substr(0, 1).toUpperCase() + splitStr[i].substr(1).toLowerCase();
+        splitStr[i] =
+          splitStr[i].substr(0, 1).toUpperCase() +
+          splitStr[i].substr(1).toLowerCase();
       }
-      return splitStr.join(' ');
+      return splitStr.join(" ");
     }
-    return '';
+    return "";
   }
 
   render() {
@@ -29,7 +30,9 @@ export class AppAddress {
       <div class="cmp-address">
         <h3>{this.normalize(this.name)}</h3>
         <div>{this.normalize(this.street)}</div>
-        <div>{this.normalize(this.city)}, {this.state.toUpperCase} {this.zip}</div>
+        <div>
+          {this.normalize(this.city)}, {this.state.toUpperCase} {this.zip}
+        </div>
       </div>
     );
   }

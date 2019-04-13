@@ -7,39 +7,34 @@
 /// @param {Bool} $self [false] - Whether or not to include current selector
 /// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
 @mixin on-event($self: false) {
-    @if $self {
-
-      &,
-      &:hover,
-      &:active,
-      &:focus {
-        @content;
-      }
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
     }
-
-    @else {
-
-      &:hover,
-      &:active,
-      &:focus {
-        @content;
-      }
-    }
-  }
-
-  /// Make a context based selector a little more friendly
-  /// @author Hugo Giraudel
-  /// @param {String} $context
-  @mixin when-inside($context) {
-    #{$context} & {
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
       @content;
     }
   }
+}
 
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
 
-  // Media Query Manager
+// Media Query Manager
 
-  /*
+/*
       0 - 523px :     Phone
       524 - 959px :   Tablet Portrait
       960 - 1200px :  Tablet Landscape
@@ -52,35 +47,35 @@
   - tab-land
   - big-desktop
   */
-  @mixin respond($breakpoint) {
-    @if $breakpoint==phone {
-      @media only screen and (max-width: calculateEm(523px)) {
-        @content
-      }
-    }
-
-    @if $breakpoint==tab-port {
-      @media only screen and (max-width: calculateEm(960px)) {
-        @content
-      }
-    }
-
-    @if $breakpoint==tab-land {
-      @media only screen and (max-width: calculateEm(1200px)) {
-        @content
-      }
-    }
-
-    @if $breakpoint==big-desktop {
-      @media only screen and (min-width: calculateEm(1440px)) {
-        @content
-      }
-    }
-
-    // for animations or other items that need to be explicitly started on desktop only
-    @if $breakpoint==desktop {
-      @media only screen and (min-width: calculateEm(1024px)) {
-        @content
-      }
+@mixin respond($breakpoint) {
+  @if $breakpoint==phone {
+    @media only screen and (max-width: calculateEm(523px)) {
+      @content;
     }
   }
+
+  @if $breakpoint==tab-port {
+    @media only screen and (max-width: calculateEm(960px)) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tab-land {
+    @media only screen and (max-width: calculateEm(1200px)) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==big-desktop {
+    @media only screen and (min-width: calculateEm(1440px)) {
+      @content;
+    }
+  }
+
+  // for animations or other items that need to be explicitly started on desktop only
+  @if $breakpoint==desktop {
+    @media only screen and (min-width: calculateEm(1024px)) {
+      @content;
+    }
+  }
+}

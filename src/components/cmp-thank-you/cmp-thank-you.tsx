@@ -1,12 +1,11 @@
-import { Component } from '@stencil/core';
+import { Component } from "@stencil/core";
 
 @Component({
-  tag: 'cmp-thank-you',
-  styleUrl: 'cmp-thank-you.scss',
+  tag: "cmp-thank-you",
+  styleUrl: "cmp-thank-you.scss",
   shadow: true
 })
 export class CmpFireworks {
-
   render() {
     return (
       <div class="cmp-thank-you">
@@ -15,7 +14,11 @@ export class CmpFireworks {
         <h2>Session Recordings Coming Soon On</h2>
         <div>
           <a href="https://www.pluralsight.com/">
-            <img class="pluralsight" src="assets/icon/sponsors/pluralsight.png" alt="Pluralsight" />
+            <img
+              class="pluralsight"
+              src="assets/icon/sponsors/pluralsight.png"
+              alt="Pluralsight"
+            />
           </a>
         </div>
       </div>

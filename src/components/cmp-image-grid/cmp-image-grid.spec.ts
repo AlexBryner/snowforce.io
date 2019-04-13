@@ -1,7 +1,7 @@
-import { AppHome } from './cmp-image-grid';
+import { AppHome } from "./cmp-image-grid";
 
-describe('app', () => {
-  it('builds', () => {
+describe("app", () => {
+  it("builds", () => {
     expect(new AppHome()).toBeTruthy();
   });
 });

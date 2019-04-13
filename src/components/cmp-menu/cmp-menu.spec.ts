@@ -1,7 +1,7 @@
-import { CmpMenu } from './cmp-menu';
+import { CmpMenu } from "./cmp-menu";
 
-describe('cmp-menu', () => {
-  it('builds', () => {
+describe("cmp-menu", () => {
+  it("builds", () => {
     expect(new CmpMenu()).toBeTruthy();
   });
 });

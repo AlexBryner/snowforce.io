@@ -1,12 +1,11 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop } from "@stencil/core";
 
 @Component({
-  tag: 'cmp-sponsor',
-  styleUrl: 'cmp-sponsor.scss',
+  tag: "cmp-sponsor",
+  styleUrl: "cmp-sponsor.scss",
   shadow: false
 })
 export class CmpSponsor {
-
   /** Sponsor Name */
   @Prop() name: string;
   /** Sponsor Level */
@@ -19,12 +18,12 @@ export class CmpSponsor {
   @Prop() alt: string;
 
   getSrc(): string {
-    return 'assets/icon/sponsors/' + this.logo;
+    return "assets/icon/sponsors/" + this.logo;
   }
 
   getLogo(): any {
     if (this.logo) {
-       return <img src={this.getSrc()} alt={this.alt} />;
+      return <img src={this.getSrc()} alt={this.alt} />;
     } else {
       return;
     }
@@ -33,9 +32,10 @@ export class CmpSponsor {
   render() {
     return (
       <div class={this.level}>
-          <a href={this.url}>
-            {this.getLogo()}{this.name}
-          </a>
+        <a href={this.url}>
+          {this.getLogo()}
+          {this.name}
+        </a>
       </div>
     );
   }

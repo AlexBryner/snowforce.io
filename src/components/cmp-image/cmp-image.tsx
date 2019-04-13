@@ -1,12 +1,11 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop } from "@stencil/core";
 
 @Component({
-  tag: 'cmp-image',
-  styleUrl: 'cmp-image.scss',
+  tag: "cmp-image",
+  styleUrl: "cmp-image.scss",
   shadow: false
 })
 export class CmpImage {
-
   /** Name of the image to display */
   @Prop() src!: string;
   /** Alt Text for the Image */
@@ -20,7 +19,7 @@ export class CmpImage {
   @Prop() largeSrc: string;
 
   /** Image directory. */
-  @Prop() imgDirectory: string = 'assets/images/';
+  @Prop() imgDirectory: string = "assets/images/";
   /** Transition to Small Screen Size. */
   @Prop() smallPxl: number = 524;
   /** Transition to Medium Screen Size. */
@@ -28,60 +27,59 @@ export class CmpImage {
   /** Transition to Large Screen Size. */
   @Prop() largePxl: number = 1440;
 
-
   getImg(img: string): string {
     if (img) {
       return this.imgDirectory + img;
     } else {
-      return '';
+      return "";
     }
   }
 
   getAlt(): string {
-    return 'Snowforce - ' + this.alt;
+    return "Snowforce - " + this.alt;
   }
 
   getSrcSet(): string {
-    let srcSet: string = '';
+    let srcSet: string = "";
     if (this.smallSrc) {
-      srcSet += this.getImg(this.smallSrc) + ' ' + this.smallPxl + 'w';
+      srcSet += this.getImg(this.smallSrc) + " " + this.smallPxl + "w";
     }
 
     if (this.mediumSrc) {
       if (srcSet) {
-        srcSet += ', ';
+        srcSet += ", ";
       }
 
-      srcSet += this.getImg(this.mediumSrc) + ' ' + this.mediumPxl + 'w';
+      srcSet += this.getImg(this.mediumSrc) + " " + this.mediumPxl + "w";
     }
 
     if (this.largeSrc) {
       if (srcSet) {
-        srcSet += ', ';
+        srcSet += ", ";
       }
 
-      srcSet += this.getImg(this.largeSrc) + ' ' + this.largePxl + 'w';
+      srcSet += this.getImg(this.largeSrc) + " " + this.largePxl + "w";
     }
 
     return srcSet;
   }
 
   getSizes(): string {
-    let sizes: string = '';
+    let sizes: string = "";
     if (this.smallPxl) {
       sizes += `(max-width: ${this.smallPxl}px) ${this.smallPxl}px`;
     }
 
     if (this.mediumPxl) {
       if (sizes) {
-        sizes += ', '
+        sizes += ", ";
       }
-      sizes += `(max-width: ${this.mediumPxl}px) ${this.mediumPxl}px`
+      sizes += `(max-width: ${this.mediumPxl}px) ${this.mediumPxl}px`;
     }
 
     if (this.largePxl) {
       if (sizes) {
-        sizes += ', ';
+        sizes += ", ";
       }
       sizes += `${this.largePxl}px`;
     }
@@ -91,10 +89,12 @@ export class CmpImage {
   render() {
     return (
       <div class="cmp-image">
-        <img srcset={this.getSrcSet()}
-              sizes={this.getSizes()}
-              src={this.getImg(this.src)}
-              alt={this.getAlt()}/>
+        <img
+          srcset={this.getSrcSet()}
+          sizes={this.getSizes()}
+          src={this.getImg(this.src)}
+          alt={this.getAlt()}
+        />
       </div>
     );
   }
