@@ -9,27 +9,34 @@ import "@stencil/router";
 export class AppRoot {
   @State() showMenu: boolean = false;
 
+  toggleOverlay() {
+    this.showMenu = !this.showMenu;
+  }
+
   @Listen("toggleMenuEvent")
   todoCompletedHandler(event: CustomEvent) {
-    if (event.detail === "toggle") {
-      this.showMenu = !this.showMenu;
-    } else if (event.detail === "close") {
+    if (event.detail === "close") {
       this.showMenu = false;
     } else {
-      this.showMenu = true;
+      this.showMenu = !this.showMenu;
     }
   }
 
   render() {
     return (
-      <div>
+      <div class="app-root">
         <header>
           <cmp-header />
         </header>
 
-        <side-menu class={this.showMenu ? "" : "slide-right"}>
-          <cmp-mobile-menu id="mobile-menu" />
-        </side-menu>
+        <mobile-menu class={this.showMenu ? "show" : "hide"}>
+          <overlay onClick={this.toggleOverlay.bind(this)} />
+          <side-drawer>
+            <div>
+              <cmp-mobile-menu id="mobile-menu" />
+            </div>
+          </side-drawer>
+        </mobile-menu>
 
         <main>
           <stencil-router>

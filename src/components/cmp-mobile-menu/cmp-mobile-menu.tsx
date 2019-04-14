@@ -9,7 +9,9 @@ export class CmpMobileMenu {
   render() {
     return (
       <div class="cmp-mobile-menu">
-        <cmp-menu-links />
+        <div>
+          <cmp-menu-links />
+        </div>
       </div>
     );
   }

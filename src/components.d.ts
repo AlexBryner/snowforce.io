@@ -44,7 +44,9 @@ export namespace Components {
   }
 
   interface CmpHeader {}
-  interface CmpHeaderAttributes extends StencilHTMLAttributes {}
+  interface CmpHeaderAttributes extends StencilHTMLAttributes {
+    'onToggleMenuEvent'?: (event: CustomEvent) => void;
+  }
 
   interface CmpImageGrid {}
   interface CmpImageGridAttributes extends StencilHTMLAttributes {}

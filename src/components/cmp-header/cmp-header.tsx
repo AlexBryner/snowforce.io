@@ -1,4 +1,4 @@
-import { Component } from "@stencil/core";
+import { Component, Event, EventEmitter } from "@stencil/core";
 
 @Component({
   tag: "cmp-header",
@@ -6,8 +6,10 @@ import { Component } from "@stencil/core";
   shadow: true
 })
 export class CmpMenu {
-  menuClick() {
-    console.log("Menu Clicked");
+  @Event() toggleMenuEvent: EventEmitter;
+
+  linkClicked(type: string) {
+    this.toggleMenuEvent.emit(type);
   }
 
   render() {
@@ -15,7 +17,11 @@ export class CmpMenu {
       <div class="cmp-header">
         <div class="container">
           <stencil-route-link url="/">
-            <a class="header-link" href="/">
+            <a
+              class="header-link"
+              href="/"
+              onMouseDown={this.linkClicked.bind(this, "close")}
+            >
               <img
                 class="header-img"
                 src="assets/images/snowforce-2x.png"

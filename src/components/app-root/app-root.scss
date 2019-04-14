@@ -4,24 +4,54 @@ header {
   z-index: 100000;
 }
 
-side-menu {
-  transition: all 300ms ease-in-out;
-  position: fixed;
+mobile-menu {
   display: none;
-  pointer-events: none;
-  right: 0;
-  min-width: 30%;
-  padding: 2rem;
-  min-height: calc(100vh - 4rem);
-  background-color: white;
-  box-shadow: -5px 0 5px 1px rgba(0, 0, 0, 0.288);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
 
   @include respond(tab-land) {
-    display: inherit;
-    pointer-events: all;
+    display: flex;
   }
 }
 
-.slide-right {
-  transform: translateX(103%);
+overlay {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+side-drawer {
+  position: fixed;
+  left: 100vw;
+  width: 30vw;
+  height: 100vh;
+  z-index: 5000;
+  transition: all 300ms ease-in-out;
+  background-color: white;
+  box-shadow: -5px 0 5px 1px rgba(0, 0, 0, 0.288);
+
+  & > div {
+    padding: 2rem;
+  }
+
+  @include respond(tab-port) {
+    width: 50vw;
+  }
+
+  @include respond(phone) {
+    width: 100vw;
+  }
+}
+
+.show {
+  & > overlay {
+    display: inline;
+  }
+
+  & > side-drawer {
+    display: flex;
+    transform: translateX(-100%);
+  }
 }
