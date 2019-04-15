@@ -32,7 +32,7 @@ side-drawer {
   background-color: white;
   box-shadow: -5px 0 5px 1px rgba(0, 0, 0, 0.288);
 
-  & > div {
+  &>div {
     padding: 2rem;
   }
 
@@ -46,12 +46,16 @@ side-drawer {
 }
 
 .show {
-  & > overlay {
+  &>overlay {
     display: inline;
   }
 
-  & > side-drawer {
+  &>side-drawer {
     display: flex;
     transform: translateX(-100%);
   }
+}
+
+.hide {
+  width: 0;
 }
