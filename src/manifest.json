@@ -3,16 +3,18 @@
   "short_name": "Snowforce",
   "start_url": "/",
   "display": "standalone",
-  "icons": [{
-    "src": "/assets/icons/snowforce-badge-192.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  },
-  {
-    "src": "/assets/icon/snowforce-badge-512.png",
-    "sizes": "512x512",
-    "type": "image/png"
-  }],
+  "icons": [
+    {
+      "src": "/assets/icon/snowforce-badge-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/icon/snowforce-badge-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
   "background_color": "rgb(255, 255, 255)",
   "theme_color": "rgb(0, 160, 255)"
 }
